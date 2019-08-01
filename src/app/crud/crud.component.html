@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-6"> 
+        <input     (keyup.enter)="createPost(m)" #m   type="text" class="form-control">  
+        <label> Enter Name</label>
+    </div>
+  
+  </div>
+  
+  <table class="table table-hover table-dark table-bordered">
+    <tr *ngFor="let p of post"> 
+      <td>{{p.id}}</td>
+      <td>{{p.title}}</td>  
+      <td><button (click)="updatePost(post)" class="btn btn-warning">Update</button></td>
+      <td><button (click)="deletePost(p)" class="btn btn-danger btn-sm pull-right">Delete</button></td>
+    </tr>  
+  </table>
+  <hr>
+  <input type="text" [(ngModel)]="name">
+  {{name}}
+  
+  

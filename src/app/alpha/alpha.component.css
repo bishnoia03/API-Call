@@ -1,0 +1,14 @@
+img{
+    width: 120px;
+    height: 80px;
+}
+
+thead{
+    background-color: rgb(145, 255, 145);
+    text-align: center;
+
+}
+tbody{
+    text-align: center;
+    background-color: rgb(187, 197, 171);
+}

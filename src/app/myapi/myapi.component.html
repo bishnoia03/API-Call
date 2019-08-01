@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+    <table class="table table-striped table-hover" >
+  <thead >
+    <tr>
+        <td><strong>Id</strong></td>
+    <td><strong>Name</strong></td>
+    <td><strong>trade</strong></td>
+    <td><strong>Contact</strong></td>
+    <td><strong>Action</strong></td>
+    </tr>
+  </thead>
+    <tbody *ngFor="let a of post">
+        <td>{{a.id}}</td>
+      <td>{{a.name}}</td>
+      <td>{{a.trade}}</td>
+      <td>{{a.contact}}</td>     
+      <td><button class="btn btn-danger" (click)="fun(a)">Remove</button></td>
+    </tbody>
+    </table>
+    </div>
+  </div>
+  
